@@ -1,13 +1,19 @@
-
+import { Header } from './components/common/Header'
+import { Menu } from './components/common/Menu'
+import { ToDoWrapper } from './components/todo/ToDoWrapper'
 import './App.css'
 
 function App() {
 
   return (
     <>
-    <div className="bg-red-500 text-white p-4">
-  Tailwind Working Test
-</div>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <div className='flex'>
+          <Menu />
+          <ToDoWrapper />
+        </div>
+      </div>
     </>
   )
 }
