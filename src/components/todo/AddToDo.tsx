@@ -5,7 +5,8 @@ export const TaskDetails = createContext<string[]>([]);
 
 export function AddToDo() {
     const [addTask, setAddTask] = useState('')
-    const [addedTask, setAddedTask] = useState([''])
+    const [addedTask, setAddedTask] = useState<string[]>([])
+
     const [isEditButtonClicked, setIsEditButtonClicked] = useState(false)
     const [isAddTaskButtonClicked, setIsAddTaskButtonClicked] = useState(false)
 
@@ -14,7 +15,7 @@ export function AddToDo() {
         setAddTask('')
     }
 
-    function onEditButtonClick(task: string, index:number) {
+    function onEditButtonClick(task: string) {
         setIsAddTaskButtonClicked(true)
         setIsEditButtonClicked(true); 
         setAddTask(task)

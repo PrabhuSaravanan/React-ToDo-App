@@ -30,7 +30,7 @@ export function ToDoList({ onEditButtonClick }: ToDoListProps) {
                         Edit
                     </button>
                     <button
-                        onClick={onDeleteButtonClicked}
+                        onClick={()=> onDeleteButtonClicked}
                         className="bg-red-500 hover:bg-blue-700 text-white text-sm px-3 ml-2 py-1 rounded-lg transition-colors"
                     >
                         Delete
