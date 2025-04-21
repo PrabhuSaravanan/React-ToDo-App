@@ -16,7 +16,7 @@ export const ToDoList: React.FC = () => {
   };
 
   const handleSave = (id: number) => {
-    editToDo(id, editText); // Call the editToDo from context
+    editToDo(id, editText);
     setEditId(null);
     setEditText("");
   };
