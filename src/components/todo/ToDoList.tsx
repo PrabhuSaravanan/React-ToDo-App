@@ -1,14 +1,12 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { TaskDetails } from "./AddToDo"
 
 interface ToDoListProps {
     onEditButtonClick: (task: string, index:number) => void;
 }
 
-
 export function ToDoList({ onEditButtonClick }: ToDoListProps) {
 
-    const [isEditButtonClicked, setIsEditButtonClicked]=useState(false)
     const addedTasks = useContext(TaskDetails)
 
     function onEditButtonClicked(task:string, index:number){
