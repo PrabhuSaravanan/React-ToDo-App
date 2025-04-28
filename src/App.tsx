@@ -1,7 +1,6 @@
 import { Header } from './components/common/Header'
-import { Menu } from './components/common/Menu'
-import { ToDoWrapper } from './components/todo/ToDoWrapper'
 import './App.css'
+import { ReactHookForms } from './components/react-hook-forms/ReactHookForms'
 
 function App() {
 
@@ -10,8 +9,7 @@ function App() {
       <div className="bg-gray-50">
         <Header />
         <div className='flex'>
-          <Menu />
-          <ToDoWrapper />
+          <ReactHookForms />
         </div>
       </div>
     </>
